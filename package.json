@@ -1,0 +1,15 @@
+{
+  "name": "@ksivamuthu/hvac-demo-device",
+  "version": "1.0.0",
+  "description": "HVAC Demo Device",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "build": "npx pkg -t linux,macos,win . --out-path dist"
+  },
+  "author": "ksivamuthu",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
