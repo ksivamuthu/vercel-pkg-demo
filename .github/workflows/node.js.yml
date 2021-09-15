@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -24,14 +23,4 @@ jobs:
       uses: actions/upload-artifact@v2.2.4
       with:
         name: packages
-        path: dist/hvac-demo-device-linux
-    - name: mac package
-      uses: actions/upload-artifact@v2.2.4
-      with:
-        name: packages
-        path: dist/hvac-demo-device-macos
-    - name: win package
-      uses: actions/upload-artifact@v2.2.4
-      with:
-        name: packages
-        path: dist/hvac-demo-device-win.exe
+        path: dist/
