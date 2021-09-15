@@ -20,8 +20,18 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Upload a Build Artifact
+    - name: linux package
       uses: actions/upload-artifact@v2.2.4
       with:
         name: packages
-        path: dist
+        path: dist/hvac-demo-device-linux
+    - name: mac package
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: packages
+        path: dist/hvac-demo-device-macos
+    - name: win package
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: packages
+        path: dist/hvac-demo-device-win.exe
