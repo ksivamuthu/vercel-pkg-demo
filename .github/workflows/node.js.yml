@@ -22,5 +22,15 @@ jobs:
     - name: linux package
       uses: actions/upload-artifact@v2.2.4
       with:
-        name: packages
-        path: dist/
+        name: hvac-demo-device-linux
+        path: dist/hvac-demo-device-linux
+    - name: mac package
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: hvac-demo-device-macos
+        path: dist/hvac-demo-device-macos     
+    - name: win package
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: hvac-demo-device-win
+        path: dist/hvac-demo-device-win.exe             
